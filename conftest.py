@@ -1,5 +1,5 @@
 import pytest
-from selene import browser,
+from selene import browser
 
 @pytest.fixture(autouse=True)
 def browser_setup():
