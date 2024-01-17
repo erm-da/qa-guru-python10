@@ -1,7 +1,7 @@
 import pytest
-from selene import browser, have, be
+from selene import browser,
 
-@pytest.fixture()
+@pytest.fixture(autouse=True)
 def browser_setup():
     browser.config.window_width = 1920
     browser.config.window_height = 1080
